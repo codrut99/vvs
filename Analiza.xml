@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1608197251886" analysisTimestamp="1608197247364" release="">
+  <Project projectName="Server">
+    <Jar>C:\Users\Codrut\eclipse-workspace\Server\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Codrut\eclipse-workspace\Server\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\Desktop\Selenium\libs\byte-buddy-1.8.15.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\Desktop\Selenium\libs\commons-exec-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\Desktop\Selenium\libs\guava-25.0-jre.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\Desktop\Selenium\libs\okhttp-3.11.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\Desktop\Selenium\libs\okio-1.14.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\Desktop\Selenium\client-combined-3.141.59.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\Desktop\Selenium\client-combined-3.141.59-sources.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\.p2\pool\plugins\org.testng_7.3.0.r202008060316.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\.p2\pool\plugins\com.beust.jcommander_1.78.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Codrut\.p2\pool\plugins\org.yaml.snakeyaml_1.21.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Codrut\eclipse-workspace\Server\src</SrcDir>
+    <WrkDir>C:\Users\David\eclipse-workspace\.metadata\.plugins\edu.umd.cs.findbugs.plugin.eclipse</WrkDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="mypackege.Server">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Class>
+    <Method classname="mypackege.Server" name="handler" signature="()V" isStatic="false">
+      <SourceLine classname="mypackege.Server" start="81" end="123" startBytecode="0" endBytecode="124" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Method>
+    <LocalVariable name="contentType" register="9" pc="130" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="mypackege.Server" start="100" end="100" startBytecode="128" endBytecode="128" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    <SourceLine classname="mypackege.Server" start="100" end="100" startBytecode="128" endBytecode="128" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="contentType"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="mypackege.Server">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Class>
+    <Method classname="mypackege.Server" name="errorHeader" signature="(Ljava/lang/String;Ljava/io/OutputStream;)V" isStatic="true">
+      <SourceLine classname="mypackege.Server" start="37" end="42" startBytecode="0" endBytecode="146" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="mypackege.Server" start="38" end="38" startBytecode="15" endBytecode="15" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    <SourceLine classname="mypackege.Server" start="38" end="38" startBytecode="15" endBytecode="15" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="mypackege.Server">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Class>
+    <Method classname="mypackege.Server" name="handler" signature="()V" isStatic="false">
+      <SourceLine classname="mypackege.Server" start="81" end="123" startBytecode="0" endBytecode="653" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="mypackege.Server" start="86" end="86" startBytecode="34" endBytecode="34" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    <SourceLine classname="mypackege.Server" start="86" end="86" startBytecode="34" endBytecode="34" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="mypackege.Server">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Class>
+    <Method classname="mypackege.Server" name="respond" signature="(ILjava/lang/String;Ljava/io/OutputStream;[B)V" isStatic="false">
+      <SourceLine classname="mypackege.Server" start="54" end="59" startBytecode="0" endBytecode="177" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="mypackege.Server" start="54" end="54" startBytecode="17" endBytecode="17" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    <SourceLine classname="mypackege.Server" start="54" end="54" startBytecode="17" endBytecode="17" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="mypackege.Server">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Class>
+    <Field classname="mypackege.Server" name="orice" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Field>
+    <SourceLine classname="mypackege.Server" start="20" end="20" startBytecode="2" endBytecode="2" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="mypackege.Server">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Class>
+    <Method classname="mypackege.Server" name="handler" signature="()V" isStatic="false">
+      <SourceLine classname="mypackege.Server" start="81" end="123" startBytecode="0" endBytecode="653" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Method>
+    <Field classname="mypackege.Server" name="orice" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="mypackege.Server" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    </Field>
+    <SourceLine classname="mypackege.Server" start="102" end="102" startBytecode="161" endBytecode="161" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+    <SourceLine classname="mypackege.Server" start="102" end="102" startBytecode="161" endBytecode="161" sourcefile="Server.java" sourcepath="mypackege/Server.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" first="1">
+    <Class classname="test.PageObject">
+      <SourceLine classname="test.PageObject" sourcefile="PageObject.java" sourcepath="test/PageObject.java"/>
+    </Class>
+    <Field classname="test.PageObject" name="driver" signature="Lorg/openqa/selenium/WebDriver;" isStatic="false">
+      <SourceLine classname="test.PageObject" sourcefile="PageObject.java" sourcepath="test/PageObject.java"/>
+    </Field>
+    <SourceLine classname="test.PageObject" start="9" end="9" startBytecode="6" endBytecode="6" sourcefile="PageObject.java" sourcepath="test/PageObject.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="setDirectorycunull" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="67" end="68" startBytecode="0" endBytecode="4" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <LocalVariable name="path" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.ServerTest" start="67" end="67" startBytecode="5" endBytecode="5" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="67" end="67" startBytecode="5" endBytecode="5" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="path"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="setDirectorycunull2" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="71" end="72" startBytecode="0" endBytecode="4" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <LocalVariable name="path" register="1" pc="7" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.ServerTest" start="71" end="71" startBytecode="6" endBytecode="6" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="71" end="71" startBytecode="6" endBytecode="6" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="path"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="setDirectorycustringcunull" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="106" end="108" startBytecode="0" endBytecode="3" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <LocalVariable name="path" register="1" pc="5" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.ServerTest" start="106" end="106" startBytecode="4" endBytecode="4" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="106" end="106" startBytecode="4" endBytecode="4" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="path"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="schimbDirectorybun" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="41" end="44" startBytecode="0" endBytecode="19" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:\\Users\\David\\Desktop\\test" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="42" end="42" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="42" end="42" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="schimbDirectorynuiBun" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="55" end="58" startBytecode="0" endBytecode="19" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:\\Users\\David\\Desktop\\asd" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="56" end="56" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="56" end="56" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="schimbMaintenancebun" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="48" end="51" startBytecode="0" endBytecode="19" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:\\Users\\David\\Desktop\\test" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="49" end="49" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="49" end="49" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="schimbMaintenancenuiBun" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="61" end="64" startBytecode="0" endBytecode="19" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:\\Users\\David\\Desktop\\asd" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="62" end="62" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="62" end="62" startBytecode="27" endBytecode="27" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="setDirectorycunimicladoi" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="88" end="90" startBytecode="0" endBytecode="13" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:/Users/David/Desktop/" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="88" end="88" startBytecode="11" endBytecode="11" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="88" end="88" startBytecode="11" endBytecode="11" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="setDirectorycustring" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="101" end="103" startBytecode="0" endBytecode="13" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:/Users/David/Desktop/" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="101" end="101" startBytecode="11" endBytecode="11" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="101" end="101" startBytecode="11" endBytecode="11" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="setDirectorycustringcufalse" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="116" end="118" startBytecode="0" endBytecode="10" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:\\Users\\David\\Desktop\\dasdasdas" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="116" end="116" startBytecode="6" endBytecode="6" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="116" end="116" startBytecode="6" endBytecode="6" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.ServerTest">
+      <SourceLine classname="test.ServerTest" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Class>
+    <Method classname="test.ServerTest" name="setDirectorycustringcutrue" signature="()V" isStatic="false">
+      <SourceLine classname="test.ServerTest" start="111" end="113" startBytecode="0" endBytecode="10" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    </Method>
+    <String value="C:\\Users\\David\\Desktop\\test" role="FILE_NAME"/>
+    <SourceLine classname="test.ServerTest" start="111" end="111" startBytecode="6" endBytecode="6" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+    <SourceLine classname="test.ServerTest" start="111" end="111" startBytecode="6" endBytecode="6" sourcefile="ServerTest.java" sourcepath="test/ServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="test.WebForm">
+      <SourceLine classname="test.WebForm" sourcefile="WebForm.java" sourcepath="test/WebForm.java"/>
+    </Class>
+    <Field classname="test.WebForm" name="FIRST_NAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="test.WebForm" sourcefile="WebForm.java" sourcepath="test/WebForm.java"/>
+    </Field>
+    <SourceLine classname="test.WebForm" start="9" end="9" startBytecode="8" endBytecode="8" sourcefile="WebForm.java" sourcepath="test/WebForm.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="test.WebForm">
+      <SourceLine classname="test.WebForm" sourcefile="WebForm.java" sourcepath="test/WebForm.java"/>
+    </Class>
+    <Field classname="test.WebForm" name="LAST_NAME" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="test.WebForm" sourcefile="WebForm.java" sourcepath="test/WebForm.java"/>
+    </Field>
+    <SourceLine classname="test.WebForm" start="10" end="10" startBytecode="14" endBytecode="14" sourcefile="WebForm.java" sourcepath="test/WebForm.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 17 Dec 2020 10:26:34 +0100" total_classes="10" referenced_classes="64" total_bugs="20" total_size="358" num_packages="2" java_version="1.8.0_271" vm_version="25.271-b09" cpu_seconds="0.44" clock_seconds="0.12" peak_mbytes="452.12" alloc_mbytes="1024.00" gc_seconds="0.00" priority_2="17" priority_1="3">
+    <PackageStats package="mypackege" total_bugs="6" total_types="5" total_size="226" priority_2="3" priority_1="3">
+      <ClassStats class="mypackege.David" sourceFile="Server.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="mypackege.Interfata" sourceFile="Interfata.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="mypackege.Interfata$1" sourceFile="Interfata.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="mypackege.Interfata$2" sourceFile="Interfata.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="mypackege.Server" sourceFile="Server.java" interface="false" size="80" bugs="6" priority_2="3" priority_1="3"/>
+    </PackageStats>
+    <PackageStats package="test" total_bugs="14" total_types="5" total_size="132" priority_2="14">
+      <ClassStats class="test.PageObject" sourceFile="PageObject.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="test.SeleniumTest" sourceFile="SeleniumTest.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="test.ServerTest" sourceFile="ServerTest.java" interface="false" size="74" bugs="11" priority_2="11"/>
+      <ClassStats class="test.Utils" sourceFile="Utils.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="test.WebForm" sourceFile="WebForm.java" interface="false" size="24" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="81" invocations="1" avgMicrosecondsPerInvocation="81263" maxMicrosecondsPerInvocation="81263" standardDeviationMircosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1608197251882" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
